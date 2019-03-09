@@ -1,17 +1,20 @@
 <template>
-    <div class="header">
-        <div class="header-left">
-            广州
-            <span class="iconfont arrow-icon">&#xe64a;</span>
-        </div>
-        <div class="header-input">
-            <span class="iconfont">&#xe62d;</span>
-        搜索旅游地/酒店/景点
-        </div>
-        <div class="header-right">
-            <div class="iconfont back-icon">&#xe70a;</div>
-        </div>
+  <div class="header">
+    <router-link to="/city">
+      <div class="header-left">
+          广州
+        <span class="iconfont arrow-icon">&#xe64a;</span>
+      </div>
+    </router-link>
+
+    <div class="header-input">
+      <span class="iconfont">&#xe62d;</span>
+      搜索旅游地/酒店/景点
     </div>
+    <div class="header-right">
+      <div class="iconfont back-icon">&#xe70a;</div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -31,6 +34,7 @@ export default {
           width: 1.24rem
           float: left
           text-align: center
+          color: #fff
           .arrow-icon
               font-size: .2rem
       .header-input
